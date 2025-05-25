@@ -1,17 +1,15 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Database, Brain } from "lucide-react";
-
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-portfolio-light via-white to-portfolio-blue/10"></div>
       
@@ -36,7 +34,7 @@ const Hero = () => {
                   Tech Enthusiast
                 </span>
                 <br />
-                <span className="text-portfolio-navy">& </span>
+                <span className="text-portfolio-navy">Welcome! 👋 </span>
                 <span className="bg-gradient-to-r from-portfolio-orange to-portfolio-yellow bg-clip-text text-transparent">
                   Lifelong Learner
                 </span>
@@ -69,18 +67,11 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <Button 
-                onClick={() => scrollToSection('portfolio')}
-                className="group bg-gradient-to-r from-portfolio-navy to-portfolio-blue hover:from-portfolio-blue hover:to-portfolio-navy text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
+              <Button onClick={() => scrollToSection('portfolio')} className="group bg-gradient-to-r from-portfolio-navy to-portfolio-blue hover:from-portfolio-blue hover:to-portfolio-navy text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                 View My Work
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                onClick={() => scrollToSection('contact')}
-                variant="outline"
-                className="border-2 border-portfolio-navy text-portfolio-navy hover:bg-portfolio-navy hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
-              >
+              <Button onClick={() => scrollToSection('contact')} variant="outline" className="border-2 border-portfolio-navy text-portfolio-navy hover:bg-portfolio-navy hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105">
                 Get in Touch
               </Button>
             </div>
@@ -112,11 +103,7 @@ const Hero = () => {
               {/* Main image container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-portfolio-blue to-portfolio-navy p-1">
                 <div className="w-full h-full rounded-3xl overflow-hidden">
-                  <img 
-                    src="https://i.postimg.cc/hGsVXFGH/okidwiyulianto.png"
-                    alt="Oki Dwi Yulianto"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
+                  <img src="https://i.postimg.cc/hGsVXFGH/okidwiyulianto.png" alt="Oki Dwi Yulianto" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
               </div>
 
@@ -133,8 +120,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
