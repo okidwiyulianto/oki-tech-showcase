@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Briefcase, Code, TrendingUp } from "lucide-react";
@@ -172,7 +171,7 @@ const About = () => {
                   )}
                   <div className="space-y-3">
                     <h4 className="text-xl font-semibold text-portfolio-navy group-hover:text-portfolio-blue transition-colors">
-                      {exp.role}
+                      Credit Services
                     </h4>
                     <h5 className="text-portfolio-orange font-medium text-lg">{exp.company}</h5>
                     <p className="text-portfolio-gray text-sm font-medium">{exp.period}</p>
