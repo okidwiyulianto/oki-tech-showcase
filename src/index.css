@@ -115,4 +115,20 @@
   .border-portfolio-navy { border-color: var(--portfolio-navy); }
   .border-portfolio-yellow { border-color: var(--portfolio-yellow); }
   .border-portfolio-blue { border-color: var(--portfolio-blue); }
+
+  /* Enhanced animations for modern UI */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
