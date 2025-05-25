@@ -113,7 +113,7 @@ const Hero = () => {
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-portfolio-blue to-portfolio-navy p-1">
                 <div className="w-full h-full rounded-3xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
+                    src="https://i.postimg.cc/hGsVXFGH/okidwiyulianto.png"
                     alt="Oki Dwi Yulianto"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
