@@ -11,10 +11,10 @@ const Contact = () => {
       action: () => window.open('mailto:admin@okidwiyulianto.com', '_blank')
     },
     {
-      type: "WhatsApp", 
-      value: "+62 858-4252-1521",
-      icon: "📱",
-      action: () => window.open('https://wa.me/6285842521521', '_blank')
+      type: "Discord", 
+      value: "discord.gg/ctHGHNXs",
+      icon: "🎮",
+      action: () => window.open('https://discord.gg/ctHGHNXs', '_blank')
     },
     {
       type: "GitHub",
@@ -70,10 +70,10 @@ const Contact = () => {
                 Send Email
               </Button>
               <Button 
-                onClick={() => window.open('https://wa.me/6285842521521', '_blank')}
+                onClick={() => window.open('https://discord.gg/ctHGHNXs', '_blank')}
                 className="portfolio-orange text-white hover:bg-opacity-90 transition-all duration-300 px-8 py-3"
               >
-                WhatsApp Message
+                Join Discord
               </Button>
             </div>
           </div>
